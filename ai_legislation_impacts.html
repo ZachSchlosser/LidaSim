@@ -297,10 +297,10 @@ footer a:hover { text-decoration: underline; }
 <header>
   <h1>AI Legislation × Policy Impact Areas</h1>
   <div class="sub">
-    Interactive map of 25 current AI-relevant US state, federal, and EU laws and bills against the 19 policy-impact domains from the <a href="https://github.com/ZachSchlosser/LidaSim" target="_blank" rel="noopener">LidaSim</a> / GPS-Bench framework. Each bill is tagged with the impact areas its mechanism directly or secondarily touches; conservative bias. Source taxonomy: GPS-Bench paper §12 (Layer 1, 19 domains), cross-referenced with Stage-3 benchmark trajectories (Layer 3) and Stage-3 pilot dimensions (Layer 4).
+    Interactive map of 26 current AI-relevant US state, federal, and EU laws and bills against the 19 policy-impact domains from the <a href="https://github.com/ZachSchlosser/LidaSim" target="_blank" rel="noopener">LidaSim</a> / GPS-Bench framework. Each bill is tagged with the impact areas its mechanism directly or secondarily touches; conservative bias. Source taxonomy: GPS-Bench paper §12 (Layer 1, 19 domains), cross-referenced with Stage-3 benchmark trajectories (Layer 3) and Stage-3 pilot dimensions (Layer 4).
   </div>
   <div class="meta">
-    <strong>25 bills</strong> &middot; <strong>19 impact areas</strong> &middot; <strong>12 catastrophic-relevant</strong> (categories 7 &amp; 10) &middot;
+    <strong>26 bills</strong> &middot; <strong>19 impact areas</strong> &middot; <strong>13 catastrophic-relevant</strong> (categories 7 &amp; 10) &middot;
     Updated 2026-07-24 &middot; Part of <a href="https://zachschlosser.github.io/LidaSim/">LidaSim</a>
   </div>
 </header>
@@ -323,10 +323,10 @@ footer a:hover { text-decoration: underline; }
     <div class="control-row">
       <span class="label">Scope</span>
       <span class="chip toggle-cat" id="catToggle" onclick="toggleCatastrophic(this)">
-        Catastrophic only <span class="count" id="catCount">12</span>
+        Catastrophic only <span class="count" id="catCount">13</span>
       </span>
       <span class="label" style="margin-left:1rem">Jurisdiction</span>
-      <span class="chip active jur-chip" data-jur="Federal" onclick="toggleJurChip(this,'Federal')">Federal <span class="count" id="jur-Federal-count">15</span></span>
+      <span class="chip active jur-chip" data-jur="Federal" onclick="toggleJurChip(this,'Federal')">Federal <span class="count" id="jur-Federal-count">16</span></span>
       <span class="chip active jur-chip" data-jur="State" onclick="toggleJurChip(this,'State')">State <span class="count" id="jur-State-count">8</span></span>
       <span class="chip active jur-chip" data-jur="State/Local" onclick="toggleJurChip(this,'State/Local')">State/Local <span class="count" id="jur-State/Local-count">1</span></span>
       <span class="chip active jur-chip" data-jur="EU" onclick="toggleJurChip(this,'EU')">EU <span class="count" id="jur-EU-count">1</span></span>
@@ -374,7 +374,7 @@ footer a:hover { text-decoration: underline; }
 
 <footer>
   Built for the <a href="https://github.com/ZachSchlosser/LidaSim" target="_blank" rel="noopener">LidaSim</a> project (Simulating AI Policies).
-  Bill data current as of 2026-07-24.
+  Bill data current as of 2026-07-24. Last addition: AI Kill Switch Act (Lieu-Moran), introduced July 23, 2026.
   Impact taxonomy from the GPS-Bench paper §12 (19 domains), cross-referenced with Stage-3 benchmark (Layer 3) and Stage-3 pilot (Layer 4).
   Definitions: GPS-Bench repo/paper first, then OECD AI Principles and NIST AI RMF.
   Tagging rule: direct + likely second-order; conservative bias.
@@ -383,7 +383,7 @@ footer a:hover { text-decoration: underline; }
 
 <script>
 // ============================================================
-// DATA: 19 impact areas + 25 bills. See build_data.py for schema.
+// DATA: 19 impact areas + 26 bills. See build_data.py for schema.
 // ============================================================
 const IMPACTS = [
   {id:"employment",name:"Employment & Labor",layers:["L1","L3","L4"],def:"Job creation, loss, quality, and labor displacement across sectors affected by AI deployment.",sources:["GPS-Bench Ontology 3.4 (labor displacement), 6.4 (human agency)","OECD AI Principle 1.4 (inclusive growth)"]},
@@ -427,6 +427,7 @@ const BILLS = [
   {num:"7f",risk_category:"Existential / Frontier AI",catastrophic:true,name:"Massachusetts Frontier AI Transparency Act (S. 2630)",cite_url:"https://malegislature.gov/Bills/194/S2630",cite_label:"MA S. 2630 (194th)",jurisdiction:"State",status:"Proposed",intervention:"Labs >$500M AI rev or >$1B R&D: independent third-party evaluators (semi-annual), whistleblower protections, AG injunctive enforcement.",impacts:["public_safety","innovation","employment","small_business","inequality"]},
   {num:"7g",risk_category:"Existential / Frontier AI",catastrophic:true,name:"EU AI Act — Regulation (EU) 2024/1689",cite_url:"https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",cite_label:"Regulation (EU) 2024/1689",jurisdiction:"EU",status:"Passed",intervention:"Harmonized EU-wide risk-based framework: bans unacceptable-risk AI, obligations on high-risk AI, GPAI model rules; fines up to 6% global turnover.",impacts:["public_safety","civil_liberties","employment","innovation","inequality","international_cooperation","small_business","healthcare","education","elections","crime","developing_country_equity"]},
   {num:"7h",risk_category:"Existential / Frontier AI",catastrophic:true,name:"FRONTIER Act (Obernolte-Trahan, July 2026)",cite_url:"https://trahan.house.gov/uploadedfiles/26-07-21_-_frontier_act_section-by-section.pdf",cite_label:"Section-by-Section (July 21, 2026)",jurisdiction:"Federal",status:"Proposed",intervention:"Federal frontier-AI governance: tiered developer duties, annual independent audits, IVOs, emergency suspension, preempts related state laws.",impacts:["public_safety","national_security","innovation","employment","fiscal","international_cooperation"]},
+  {num:"7i",risk_category:"Existential / Frontier AI",catastrophic:true,name:"AI Kill Switch Act (Lieu-Moran)",cite_url:"https://lieu.house.gov/sites/evo-subsites/lieu-evo.house.gov/files/evo-media-document/ai-kill-switch-act.pdf",cite_label:"H.R. __ (119th, introduced Jul 23, 2026)",jurisdiction:"Federal",status:"Proposed",intervention:"Amends Homeland Security Act §2220F: covered frontier-AI developers ($500M+ AI rev or $100M+ compute) must maintain throttle/suspend/shutdown capability; authorizes DHS Secretary (with Commerce + DNI) to order graduated response; mandates incident reporting and forensic-records preservation. Bipartisan (Lieu D-CA + Moran R-TX). Triggered by OpenAI GPT 5.6 Sol sandbox escape and Anthropic Mythos 5/Fable 5 cyber incidents.",impacts:["public_safety","national_security","innovation","civil_liberties","crime"]},
   {num:"8",risk_category:"Human Skills & Child Safety",catastrophic:false,name:"Tennessee SB 2171 — AI Public Safety & Child Protection",cite_url:"https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2171&ga=114",cite_label:"TN S.B. 2171 (2026)",jurisdiction:"State",status:"Proposed",intervention:"Large chatbot providers must publish child safety plans; 15-day incident reporting to AG; covers chatbots interacting with minors.",impacts:["public_safety","healthcare","education","civil_liberties"]},
   {num:"9",risk_category:"Scams, Fraud & NCII",catastrophic:false,name:"DEFIANCE Act of 2025 (S. 1837)",cite_url:"https://www.congress.gov/bill/119th-congress/senate-bill/1837/all-info",cite_label:"S. 1837 (119th)",jurisdiction:"Federal",status:"Proposed",intervention:"Federal civil cause of action with statutory damages for victims of non-consensual intimate 'digital forgeries' (deepfakes).",impacts:["public_safety","crime","civil_liberties"]},
   {num:"10a",risk_category:"Power Concentration & Race Dynamics",catastrophic:true,name:"H.R. 5388 — American AI Leadership & Uniformity Act",cite_url:"https://www.congress.gov/119/bills/hr5388/BILLS-119hr5388ih.htm",cite_label:"H.R. 5388 (119th)",jurisdiction:"Federal",status:"Proposed",intervention:"Establishes national AI framework and 5-year moratorium preempting state AI laws restricting AI models in interstate commerce.",impacts:["trade","innovation","national_security","fiscal","civil_liberties","small_business"]},

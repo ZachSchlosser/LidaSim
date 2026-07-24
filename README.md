@@ -9,7 +9,7 @@ Interactive charts for the **Simulating AI Policies** project.
 | File | What it is |
 |------|-----------|
 | [`index.html`](index.html) | Landing page with links to the two charts below. |
-| [`ai_legislation_impacts.html`](ai_legislation_impacts.html) | **AI Legislation × Policy Impact Areas** — interactive map of 25 current US state, federal, and EU AI laws/bills against the 19 policy-impact domains from the GPS-Bench framework. Filterable by catastrophic-only scope, impact area, jurisdiction, status, and text search. |
+| [`ai_legislation_impacts.html`](ai_legislation_impacts.html) | **AI Legislation × Policy Impact Areas** — interactive map of 26 current US state, federal, and EU AI laws/bills against the 19 policy-impact domains from the GPS-Bench framework. Filterable by catastrophic-only scope, impact area, jurisdiction, status, and text search. |
 | [`ai_actors.html`](ai_actors.html) | **Actors in AI 2027 & AI 2040 Scenarios** — unified inventory of 174 entities with agency across both AI Futures Project scenario documents. Original source: [`ZachSchlosser/ai-actors`](https://github.com/ZachSchlosser/ai-actors). |
 | [`ai_actors.csv`](ai_actors.csv) | Source data for `ai_actors.html`. |
 
@@ -42,7 +42,7 @@ Layer tags: **L1** = GPS-Bench paper matrix (19 domains). **L3** = Stage-3 bench
 ## Methodology
 
 - **Bill tagging rule:** direct + likely second-order effects. Conservative bias. Per GPS-Bench `policy_dossier.py` no-jump rule, second-order effects are included only where the bill's mechanism plausibly activates them.
-- **Catastrophic-relevant:** bills in chart categories 7 (Existential / Frontier AI) and 10 (Power Concentration & Race Dynamics) — 12 of 25.
+- **Catastrophic-relevant:** bills in chart categories 7 (Existential / Frontier AI) and 10 (Power Concentration & Race Dynamics) — 13 of 26.
 - **Impact definitions:** GPS-Bench repo and paper first; OECD AI Principles and NIST AI RMF fill gaps where GPS-Bench has only template slots (most of the 19). Source lineage is shown per impact in the chart's taxonomy grid and in the definition text.
 - **Bill data current as of:** 2026-07-24.
 
