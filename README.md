@@ -10,8 +10,9 @@ Interactive charts for the **Simulating AI Policies** project.
 |------|-----------|
 | [`index.html`](index.html) | Landing page with links to the two charts below. |
 | [`ai_legislation_impacts.html`](ai_legislation_impacts.html) | **AI Legislation × Policy Impact Areas** — interactive map of 26 current US state, federal, and EU AI laws/bills against the 19 policy-impact domains from the GPS-Bench framework. Filterable by catastrophic-only scope, impact area, jurisdiction, status, and text search. |
-| [`ai_actors.html`](ai_actors.html) | **Actors in AI 2027 & AI 2040 Scenarios** — unified inventory of 174 entities with agency across both AI Futures Project scenario documents. Original source: [`ZachSchlosser/ai-actors`](https://github.com/ZachSchlosser/ai-actors). |
+| [`ai_actors.html`](ai_actors.html) | **Actors in AI 2027 & AI 2040 Scenarios** — unified inventory of 174 entities with agency across both AI Futures Project scenario documents. |
 | [`ai_actors.csv`](ai_actors.csv) | Source data for `ai_actors.html`. |
+| [`build_deliverables.py`](build_deliverables.py) | Python generator for `ai_actors.html` and `ai_actors.csv` from a canonical `ACTORS` list and `DATASETS` catalog. Writes outputs to `~/Downloads/` — copy into the repo after re-running. |
 
 ## Taxonomy: 19 policy impact areas
 
