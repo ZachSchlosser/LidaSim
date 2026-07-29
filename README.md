@@ -4,6 +4,16 @@ Interactive charts for the **Simulating AI Policies** project.
 
 🔗 **Live site:** <https://zachschlosser.github.io/LidaSim/>
 
+## About
+
+**LidaSim** is the data and visualization layer for **Wargaming AI Policies to Decrease Catastrophic Risk** — a global-scale simulation framework developed at [Lida Safety Research](https://www.lidasafety.org/research) in which actors (states, companies, and influential individuals) make strategic decisions as catastrophic AI scenarios unfold. Human participants can assume any role; other entities are played by LLM-based agents.
+
+The simulation has a three-part mission: (1) a public **educational tool** for interactive exploration of catastrophic AI risk (going beyond passive resources like AI 2027), (2) a **research platform** for investigating policy questions and releasing open datasets of action/state sequences, and (3) a **policy forecasting tool** so politicians can estimate the impact of proposed AI regulations before enacting them. Each run follows a five-step loop — research question → actors and world state → mixed human/LLM simulation → accelerated LLM-only runs for statistics → expert retrospective.
+
+Recognition: 🥇 First place at the Apart Research AI Governance Hackathon; *"LidaSim: Testing AI Policies With Persona-Based Simulations"* at the AIMII workshop (IASEAI, Paris, Feb 2026); earlier version at the AI & Societal Robustness Conference (Cambridge UK, Dec 2025).
+
+This repository holds the project's charts and source data: the 174-actor inventory (drawn from the AI 2027 and AI 2040 scenario documents), the AI-legislation × policy-impact map, and the persona-methodology comparison for the top 30 actors.
+
 ## Contents
 
 | File | What it is |
