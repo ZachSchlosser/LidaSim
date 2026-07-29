@@ -12,7 +12,7 @@ The simulation has a three-part mission: (1) a public **educational tool** for i
 
 Recognition: 🥇 First place at the Apart Research AI Governance Hackathon; *"LidaSim: Testing AI Policies With Persona-Based Simulations"* at the AIMII workshop (IASEAI, Paris, Feb 2026); earlier version at the AI & Societal Robustness Conference (Cambridge UK, Dec 2025).
 
-This repository holds the project's charts and source data: the 174-actor inventory (drawn from the AI 2027 and AI 2040 scenario documents), the AI-legislation × policy-impact map, and the persona-methodology comparison for the top 30 actors.
+This repository holds project source data: the 174-actor inventory (drawn from the AI 2027 and AI 2040 scenario documents), the AI-legislation × policy-impact map, and the persona-methodology comparison for the top 30 actors.
 
 ## Contents
 
