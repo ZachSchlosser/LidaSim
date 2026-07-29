@@ -13,6 +13,7 @@ Interactive charts for the **Simulating AI Policies** project.
 | [`ai_actors.html`](ai_actors.html) | **Actors in AI 2027 & AI 2040 Scenarios** — unified inventory of 174 entities with agency across both AI Futures Project scenario documents. |
 | [`ai_actors.csv`](ai_actors.csv) | Source data for `ai_actors.html`. |
 | [`build_deliverables.py`](build_deliverables.py) | Python generator for `ai_actors.html` and `ai_actors.csv` from a canonical `ACTORS` list and `DATASETS` catalog. Writes outputs to `~/Downloads/` — copy into the repo after re-running. |
+| [`persona-comparison/`](persona-comparison/) | **Option 1 vs Option 2 Persona Profiles** — side-by-side comparison of two persona methodologies for the top 30 AI actors: CastBench baseline (12 fields) vs CastBench + HumanLM-style behavioral-trend paragraph + Rivera-style pairwise relationship matrix. Self-contained page, live at <https://zachschlosser.github.io/LidaSim/persona-comparison/>. |
 
 ## Taxonomy: 19 policy impact areas
 
